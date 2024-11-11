@@ -1,29 +1,139 @@
+body{
+    font-family: 'Arial', sans-serif;
+    max-width: 300px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    width: 80%;
+}	
+/* Medidas
+   px: pixceles
+   pt : puntos
+    cm: milimetros
+    in: pulgadas
 
-p{ 
-    color: red;
+   Medidas relativas:
+   
+    em: tamaño de la fuente padre inmediato
+    %: porcentaje 
+    rem: tamaño de la fuente de la raiz documento completo
+    vw y vh : 1vw  1vh   (1vw)1% del ancho de la pantalla
+                        (1vh)1% del altura de la pantalla
+
+*/
+
+
+
+h1{
+    color: #2c3e50;
+    background-color: #7c898d;
+   /* padding: 40px;*/
+   /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+    padding: 20px 41px 5px 0px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    width: 50%;
+    font-size: 2em;
+
+    text-transform: uppercase;
+    border: 3px solid #2c3e50;
+    border-color: #2c3e50;
+
 }
 
 
-/*#parrafito{
-    color: red;
-}*/
-
-.par{
-    color : black;
-    background-color: aqua;
-    text-align: center;
-    font-size: 30px;
+h2{
+    border-bottom: 5px solid #000;
+    width:  50%;
 }
 
 .par:hover{
-    background-color: chartreuse;
+
+    background: linear-gradient(45deg,red,#f5f5f5);
+    color:#fdfafa;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1.5s ease;
+}
+
+.formulario{
+    display: flex;
+
+
+
+}
+
+.of{
+   background-color: #f7f7f7;
+   padding : 20px ;
+   border : 10px; 
+   box-shadow : 0 0 10px rbga(0,0,0,0.1)
+}
+
+input{
+    padding : 8px ;
+    margin: 5px 0;
+    border : 1px solid #ddd; 
+    border-radius: 4px ;
+
+}
+
+button{
+    background-color: #401661;
     color: white;
-    ;
+    padding : 10px 20px ;
+    border: none ;
+    border-radius: 5px ;
+    cursor : pointer;
+    transform: background-color 0.3s;
 }
 
-.foo::before{
-    content: "→";
-    background-color: aqua;
+button:hover{
+    background-color: #401661;
 }
 
 
+#password::before{
+    content: "#";
+    position: relative;
+    left:  -25px;
+    animation: rotate 2s infinite  linear;
+    font-size: 16px;
+}
+
+
+img{
+
+    max-width: 100%;
+    border-radius: 10px;
+
+    transition: transform 0.3s opacity 0.3s;
+    opacity: 1;
+}
+
+
+inm:hover{
+    transform: scale (1.1);
+    opacity: 1;
+}
+
+@keyframes rotate {
+    from{
+        transform: translateY(-50%) rotate(0deg) ;
+    }
+    to{
+        transform: translateY(-50%) rotate(360deg) ;
+    }
+    
+}
+
+
+iframe{
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba 0, 0, 0, 0.2 ;
+    margin:  15px 0;
+}

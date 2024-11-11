@@ -1,0 +1,29 @@
+
+p{ 
+    color: red;
+}
+
+
+/*#parrafito{
+    color: red;
+}*/
+
+.par{
+    color : black;
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+}
+
+.par:hover{
+    background-color: chartreuse;
+    color: white;
+    ;
+}
+
+.foo::before{
+    content: "→";
+    background-color: aqua;
+}
+
+
