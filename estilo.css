@@ -27,13 +27,19 @@ nav li:hover{
     background-color: black;
 }
 img{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
+img1{
+    width: 200px;
+    height: 200px;
+    
+    object-fit: cover;
+}
 .contenido{
-    display:  flex;
+    display: flex;
     margin: 60px;
 }
 .articulos{
@@ -47,13 +53,26 @@ img{
     padding: 40px;
 }
 
-.menu-seundario{
+.menu-secundario{
     width: 20%;
     margin-top: 60px;
 }
-.menu-seundario a{
+.menu-secundario a{
     display: block;
     text-align: center;
     color: black;
     margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: #474747;
+    color: white;
+    margin-top: 40%;
+}
+
+forte p{
+    text-align: center;
+    padding: 50px;
+
 }
