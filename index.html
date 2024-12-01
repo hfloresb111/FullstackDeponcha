@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Flat Tire, Help Me</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css"> 
- <!---->   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- 
+    <!-- Agregando Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Flat Tire Help</title>
 </head>
 <body>
-    <!--<header class="bg-primary tetx-write text-center p-3"> -->
-    <header class="bg-primary text-white text-center p-3">
-       <h1 class="display-1">Flat Tire, Help Me</h1>
-    </header>
+    
+    <header>
+        <!-- Agregando el título con Bootstrap -->
+    <div class="bg-primary p-3 text-center text-white mb-4">
+        <h1>Flat Tire, Help Me...</h1>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <ul class="navbar-nav">  
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Servicio</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Servico Domicilio</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Cambio de Llanta</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Desponchado</a></li>
-        </ul>
-    </nav>
-    <div class="contenido">
-        <div class="articulos">
-            <div class="secciones">
-                <div>
-                    <h2 class="display-6">Servicio de Desponchado a Domicilio</h2>
-                    <p>Nosotros nos encargamos de enviarte el servicio de desponchado a tu ubicacion. Solo dinos donde estas,
-                        y un profesional se dirigira hacia ti para asistirte.</p>
-                </div>
-                <div><img src="img/LogoAzul.png" class="rounded mx-auto d-block" alt="..."></div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">  
+                    <li class="nav-item"><a class="nav-link active text-primary hover-overlay" href="./CallMe.html">Servicio</a></li>
+                    <li class="nav-item"><a class="nav-link active text-primary hover-overlay" href="./Servicios.html">Servico Domicilio</a></li>
+                    <li class="nav-item"><a class="nav-link active text-primary hover-overlay" href="./Costos.html">Costos</a></li>
+                </ul>
             </div>
         </div>
-        <div class= menu-secundario>
-           <a href="/CallMe.html" class="nav-link disabled" aria-disabled="true" href="">Call Me</a>
-           <a class="nav-link disabled" aria-disabled="true" href="">Desponchado a Domicilio</a>
-           <a class="nav-link disabled" aria-disabled="true" href="">Cambio de neumatico</a>
-           <a class="nav-link disabled" aria-disabled="true" href="">Venta de neumatico</a>
+    </nav>  
+ 
+    </header>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="display-6">Servicio de Desponchado a Domicilio</h2>
+                <p>Nosotros nos encargamos de enviarte el servicio de desponchado a tu ubicacion. Solo dinos donde estas,
+                    y un profesional se dirigira hacia ti para asistirte.</p>
+            </div> 
+            <div class="col-12 col-md-8 col-lg-7">
+                <div class="d-flex justify-content-center">
+                    <img src="img/LogoDespAzul.jpg" class="w-50" alt="...">
+                </div>
+            </div>
         </div>
-
     </div>
-
-<!--          
-<div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world’s most innovative teams</h2>
-      <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
-        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
-      </div>
-    </div>
-  </div>
-  
-
-          -->
 
     <footer class="bg-primary tetx-write text-center p-3">  <!---->
         <p class="card-text">
@@ -65,7 +54,7 @@
         LEGAL Terms of services / Privacy policy / Copyright © 2024 - All rights reserved</p>
     </footer>
 
-<!-- -->   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
-  
